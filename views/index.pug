@@ -1,0 +1,17 @@
+html
+    head
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css')
+    body
+        .section
+            .containers
+                .container
+                    form(method='POST', action='/submit')
+
+                        .field
+                        label.label URL
+                        .control
+                        input.input(name='imageurl', type='text', placeholder='image URL')
+                        p.help URL of image you want to resize!
+
+                        .control
+                            button.button.is-primary Submit
